@@ -94,6 +94,8 @@ button[type="submit"], button[type="reset"], button[onclick="window.location.hre
    text-decoration: none;
    border-radius: 5px;
    transition: background-color 0.3s ease;
+   border: 1px solid #ccc;
+   cursor: pointer;
 }
 
 </style>
