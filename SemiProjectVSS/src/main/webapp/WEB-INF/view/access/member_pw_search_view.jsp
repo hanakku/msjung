@@ -57,16 +57,24 @@ a:hover {
 a:active {
    text-decoration: underline;
 }
+button[type="submit"], button[type="reset"], button[type="button"] {
+    width: 100px; /* 너비를 크게 설정 */
+    height: 30px; /* 높이를 크게 설정 */
+    background-color: green;
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   margin-bottom: 10px; /* 각 버튼의 하단 여백을 10px로 설정 */
+   border: 1px solid #ccc;
+   cursor: pointer;
+}
 </style>
 
 </head>
 <body>
 
-<div class="container">
-        <div class="links">
-            <a href="LoginView.me">로그인</a>
-        </div>
-    </div>
+
 
  <section id="login">
   <div class="container">
@@ -74,12 +82,11 @@ a:active {
     <div class="col-9 mx-auto">
      <div class="card">
       <div class="card-header">
-       <h4>비밀번호 찾기 결과</h4>
+       <h2>비밀번호 찾기 결과</h2>
       </div>
       <div class="card-body">
-       <div class="row  pt-3 pb-1 justify-content-center">
-        <div class="col col-sm-8 text_strong text-center">검색한 비밀번호의 정보입니다.</div>
-       </div>
+      
+
        <div class="row pb-1 justify-content-center">
         <div class="col-10 col-sm-8">
          <hr class="list_hr">
@@ -113,32 +120,25 @@ a:active {
    </div>
    <div class="col-9 mx-auto py-3 mb-3">
     <div>
-     <span>
-       <button type="button" class="btn btn-outline-success" onclick="location.href='./IdSearchView.me'">
-        <i class="fas fa-user-check mr-sm-1"></i>아이디 찾기
-       </button>
-      </span>
-      
-      <span>
-      <button type="button" class="btn btn-outline-info" onclick="location.href='./PasswordSearchView.me'">
-       <i class="fas fa-user-lock mr-sm-1"></i>
-       다시 시도
-      </button>
-     </span>
-      
       
      <span>
       <button type="button" class="btn btn-outline-info" onclick="location.href='./MemberInsertView.me'">
        <i class="fas fa-user-plus mr-sm-1"></i>
        회원 가입
       </button>
+      
+      <span>
+      <button type="button" class="btn btn-outline-info" onclick="location.href='./LoginView.me'">
+       <i class="fas fa-user-lock mr-sm-1"></i>
+       로그인
+      </button>
+     </span>
+          
      </span>
     </div>
    </div>
   </div>
  </section>
- 
-
 
 </body>
 </html>
